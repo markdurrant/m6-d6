@@ -109,3 +109,32 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /* ========================================================================== Tables ========================================================================== */
 /* Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
+
+img { width: 250px; height: 250px; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
+img:hover, img:active { background: #ffaa00; }
+
+div { width: 250px; height: 250px; position: fixed; left: 50%; top: 50%; margin: -125px 0 0 -125px; animation: bg-color 30s infinite; -webkit-animation: bg-color 30s infinite; -moz-animation: bg-color 30s infinite; -o-animation: bg-color 30s infinite; }
+
+@keyframes bg-color { 0% { background: #ff00aa; }
+  25% { background: #00aaff; }
+  50% { background: #ff00aa; }
+  75% { background: #00aaff; }
+  100% { background: #ff00aa; } }
+
+@-webkit-keyframes bg-color { 0% { background: #ff00aa; }
+  25% { background: #00aaff; }
+  50% { background: #ff00aa; }
+  75% { background: #00aaff; }
+  100% { background: #ff00aa; } }
+
+@-moz-keyframes bg-color { 0% { background: #ff00aa; }
+  25% { background: #00aaff; }
+  50% { background: #ff00aa; }
+  75% { background: #00aaff; }
+  100% { background: #ff00aa; } }
+
+@-o-keyframes bg-color { 0% { background: #ff00aa; }
+  25% { background: #00aaff; }
+  50% { background: #ff00aa; }
+  75% { background: #00aaff; }
+  100% { background: #ff00aa; } }
