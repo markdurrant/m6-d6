@@ -15,13 +15,23 @@ img{
   }
 }
 
+p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  font-style: italic;
+  font-family: georgia;
+  color: hsl(0,0,75);
+}
+
 div{
   width: 250px;
   height: 250px;
   position: fixed;
   left: 50%;
   top: 50%;
-  margin: -125px 0 0 -125px;
+  margin: -155px 0 0 -125px;
 
   animation: bg-color 30s infinite;
   -webkit-animation: bg-color 30s infinite;

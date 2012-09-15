@@ -113,7 +113,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 img { width: 250px; height: 250px; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
 img:hover, img:active { background: #ffaa00; }
 
-div { width: 250px; height: 250px; position: fixed; left: 50%; top: 50%; margin: -125px 0 0 -125px; animation: bg-color 30s infinite; -webkit-animation: bg-color 30s infinite; -moz-animation: bg-color 30s infinite; -o-animation: bg-color 30s infinite; }
+p { text-align: center; font-size: 13px; line-height: 18px; margin: 0; font-style: italic; font-family: georgia; color: #bfbfbf; }
+
+div { width: 250px; height: 250px; position: fixed; left: 50%; top: 50%; margin: -155px 0 0 -125px; animation: bg-color 30s infinite; -webkit-animation: bg-color 30s infinite; -moz-animation: bg-color 30s infinite; -o-animation: bg-color 30s infinite; }
 
 @keyframes bg-color { 0% { background: #ff00aa; }
   25% { background: #00aaff; }
