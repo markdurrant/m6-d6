@@ -1,29 +1,97 @@
-//===============================================================================
-// IMPORTS
-//===============================================================================
-// define global variables
-@import "_global-variables.scss";
+html {
+  background: #FCF9F9;
+  color: #445;
+  font-family: 'Noto serif', Georgia, serif;
+  font-size: 16px;
 
-// define timing functions
-@import "_timing-functions.scss";
+  @media screen and ( min-width: 40em ) {
+    font-size: 22px;
+  }
+}
 
-// define mixins & functions
-@import "_mixins.scss";
+body {
+  width: 80%;
+  max-width: 35em;
+  margin: 0 auto 0;
+  padding: 2em 0.2em 10em;
+}
 
-// ! normalize.css v3.0.0 | MIT License | git.io/normalize
-@import "_normalize.scss";
+h1,
+h2 {
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+}
 
-// typographic styling
-@import "_typography.scss";
+h1 {
+  font-size: 1.55em;
+  text-indent: -0.1em;
 
-// layout styles
-@import "_layout.scss";
+  @media screen and ( min-width: 40em ) {
+    font-size: 2.5em;
+  }
+}
 
-// form styling
-@import "_forms.scss";
+h2 {
+  font-size: 1.1em;
+  margin: 2em 0 0.25em;
+}
 
-// button styling
-@import "_buttons.scss";
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+}
 
-// table styling
-@import "_tables.scss";
+li {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: #22F;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    text-decoration: line-through;
+  }
+}
+
+.things-i-have-made {
+  margin-top: 0.25em;
+
+  li {
+    margin-bottom: 0.25em;
+  }
+}
+
+h1,
+h2,
+li {
+  position: relative;
+}
+
+h1:before,
+h2:before,
+li:before {
+  position: absolute;
+  right: 100%;
+  padding-right: 0.25em;
+  font-weight: bolder;
+}
+
+h1:before,
+h2:before {
+  content: "#";
+}
+
+li:before {
+  content: "*";
+  padding-top: 0.15em;
+
+  @media screen and ( min-width: 40em ) {
+    padding-top: 0.2em;
+  }
+}
